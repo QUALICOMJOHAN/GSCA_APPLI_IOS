@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42361895217F0BBC00EB11AB /* logogsca.png in Resources */ = {isa = PBXBuildFile; fileRef = 42361894217F0BBC00EB11AB /* logogsca.png */; };
-		42361897217F0D7D00EB11AB /* pub_qualicom.png in Resources */ = {isa = PBXBuildFile; fileRef = 42361896217F0D7D00EB11AB /* pub_qualicom.png */; };
+		423618A2217F483300EB11AB /* logogsca.png in Resources */ = {isa = PBXBuildFile; fileRef = 423618A1217F483200EB11AB /* logogsca.png */; };
+		423618A4217F485F00EB11AB /* pub_qualicom.png in Resources */ = {isa = PBXBuildFile; fileRef = 423618A3217F485F00EB11AB /* pub_qualicom.png */; };
 		E4B34AD7217A0F71008267F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B34AD6217A0F71008267F1 /* AppDelegate.swift */; };
 		E4B34AD9217A0F71008267F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B34AD8217A0F71008267F1 /* ViewController.swift */; };
 		E4B34ADC217A0F71008267F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B34ADA217A0F71008267F1 /* Main.storyboard */; };
@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42361894217F0BBC00EB11AB /* logogsca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logogsca.png; path = "../../../Downloads/appli res/logogsca.png"; sourceTree = "<group>"; };
-		42361896217F0D7D00EB11AB /* pub_qualicom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pub_qualicom.png; path = "../../../Downloads/appli res/pub_qualicom.png"; sourceTree = "<group>"; };
+		423618A1217F483200EB11AB /* logogsca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logogsca.png; path = GSCA/img/logogsca.png; sourceTree = SOURCE_ROOT; };
+		423618A3217F485F00EB11AB /* pub_qualicom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pub_qualicom.png; path = GSCA/img/pub_qualicom.png; sourceTree = SOURCE_ROOT; };
 		E4B34AD3217A0F71008267F1 /* GSCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B34AD6217A0F71008267F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4B34AD8217A0F71008267F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 		42361893217F0B9100EB11AB /* img */ = {
 			isa = PBXGroup;
 			children = (
-				42361896217F0D7D00EB11AB /* pub_qualicom.png */,
-				42361894217F0BBC00EB11AB /* logogsca.png */,
+				423618A3217F485F00EB11AB /* pub_qualicom.png */,
+				423618A1217F483200EB11AB /* logogsca.png */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -90,7 +90,6 @@
 		E4B34ACA217A0F70008267F1 = {
 			isa = PBXGroup;
 			children = (
-				42361893217F0B9100EB11AB /* img */,
 				E4B34AD5217A0F71008267F1 /* GSCA */,
 				E4B34AEA217A0F76008267F1 /* GSCATests */,
 				E4B34AF5217A0F77008267F1 /* GSCAUITests */,
@@ -111,6 +110,7 @@
 		E4B34AD5217A0F71008267F1 /* GSCA */ = {
 			isa = PBXGroup;
 			children = (
+				42361893217F0B9100EB11AB /* img */,
 				E4B34AD6217A0F71008267F1 /* AppDelegate.swift */,
 				E4B34AD8217A0F71008267F1 /* ViewController.swift */,
 				E4B34ADA217A0F71008267F1 /* Main.storyboard */,
@@ -244,10 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B34AE1217A0F76008267F1 /* LaunchScreen.storyboard in Resources */,
+				423618A2217F483300EB11AB /* logogsca.png in Resources */,
 				E4B34ADE217A0F76008267F1 /* Assets.xcassets in Resources */,
-				42361895217F0BBC00EB11AB /* logogsca.png in Resources */,
 				E4B34ADC217A0F71008267F1 /* Main.storyboard in Resources */,
-				42361897217F0D7D00EB11AB /* pub_qualicom.png in Resources */,
+				423618A4217F485F00EB11AB /* pub_qualicom.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
