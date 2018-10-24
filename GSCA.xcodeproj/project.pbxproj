@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		423618A2217F483300EB11AB /* logogsca.png in Resources */ = {isa = PBXBuildFile; fileRef = 423618A1217F483200EB11AB /* logogsca.png */; };
 		423618A4217F485F00EB11AB /* pub_qualicom.png in Resources */ = {isa = PBXBuildFile; fileRef = 423618A3217F485F00EB11AB /* pub_qualicom.png */; };
+		42CA57AE21806EBB00862679 /* deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 42CA57AD21806EBB00862679 /* deco.png */; };
+		42DFDE79217F5D4500ED08B4 /* docs.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DFDE78217F5D4500ED08B4 /* docs.png */; };
+		42DFDE7B217F5D6000ED08B4 /* events.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DFDE7A217F5D6000ED08B4 /* events.png */; };
+		42DFDE7E217F5D7300ED08B4 /* members.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DFDE7C217F5D7300ED08B4 /* members.png */; };
+		42DFDE7F217F5D7300ED08B4 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DFDE7D217F5D7300ED08B4 /* stats.png */; };
 		E4B34AD7217A0F71008267F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B34AD6217A0F71008267F1 /* AppDelegate.swift */; };
 		E4B34AD9217A0F71008267F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B34AD8217A0F71008267F1 /* ViewController.swift */; };
 		E4B34ADC217A0F71008267F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B34ADA217A0F71008267F1 /* Main.storyboard */; };
@@ -38,6 +43,11 @@
 /* Begin PBXFileReference section */
 		423618A1217F483200EB11AB /* logogsca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logogsca.png; path = GSCA/img/logogsca.png; sourceTree = SOURCE_ROOT; };
 		423618A3217F485F00EB11AB /* pub_qualicom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pub_qualicom.png; path = GSCA/img/pub_qualicom.png; sourceTree = SOURCE_ROOT; };
+		42CA57AD21806EBB00862679 /* deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = deco.png; path = GSCA/img/deco.png; sourceTree = SOURCE_ROOT; };
+		42DFDE78217F5D4500ED08B4 /* docs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = docs.png; path = GSCA/img/docs.png; sourceTree = SOURCE_ROOT; };
+		42DFDE7A217F5D6000ED08B4 /* events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = events.png; path = GSCA/img/events.png; sourceTree = SOURCE_ROOT; };
+		42DFDE7C217F5D7300ED08B4 /* members.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = members.png; path = GSCA/img/members.png; sourceTree = SOURCE_ROOT; };
+		42DFDE7D217F5D7300ED08B4 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stats.png; path = GSCA/img/stats.png; sourceTree = SOURCE_ROOT; };
 		E4B34AD3217A0F71008267F1 /* GSCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B34AD6217A0F71008267F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4B34AD8217A0F71008267F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +91,11 @@
 		42361893217F0B9100EB11AB /* img */ = {
 			isa = PBXGroup;
 			children = (
+				42CA57AD21806EBB00862679 /* deco.png */,
+				42DFDE7C217F5D7300ED08B4 /* members.png */,
+				42DFDE7D217F5D7300ED08B4 /* stats.png */,
+				42DFDE7A217F5D6000ED08B4 /* events.png */,
+				42DFDE78217F5D4500ED08B4 /* docs.png */,
 				423618A3217F485F00EB11AB /* pub_qualicom.png */,
 				423618A1217F483200EB11AB /* logogsca.png */,
 			);
@@ -244,7 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B34AE1217A0F76008267F1 /* LaunchScreen.storyboard in Resources */,
+				42DFDE7F217F5D7300ED08B4 /* stats.png in Resources */,
+				42DFDE7E217F5D7300ED08B4 /* members.png in Resources */,
+				42DFDE7B217F5D6000ED08B4 /* events.png in Resources */,
 				423618A2217F483300EB11AB /* logogsca.png in Resources */,
+				42DFDE79217F5D4500ED08B4 /* docs.png in Resources */,
+				42CA57AE21806EBB00862679 /* deco.png in Resources */,
 				E4B34ADE217A0F76008267F1 /* Assets.xcassets in Resources */,
 				E4B34ADC217A0F71008267F1 /* Main.storyboard in Resources */,
 				423618A4217F485F00EB11AB /* pub_qualicom.png in Resources */,
