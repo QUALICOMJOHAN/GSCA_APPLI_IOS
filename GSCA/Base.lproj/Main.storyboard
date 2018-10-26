@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.30.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +12,7 @@
         <!--Searchclub-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="searchclub" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="searchclub" customModule="GSCA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
                                     <color key="titleShadowColor" red="0.038638671729999997" green="0.51735593440000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vDg-o8-GCs" kind="push" id="Y3y-oU-ONA"/>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipZ-Be-4wE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,15 +79,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="F5Z-fJ-JfH"/>
+                    <connections>
+                        <outlet property="inputclub" destination="GIJ-pK-QGx" id="4d0-nq-vIa"/>
+                        <outlet property="validclub" destination="kBw-uv-uh2" id="EWc-Xp-579"/>
+                        <segue destination="vDg-o8-GCs" kind="showDetail" identifier="searchmember" id="Ccn-u5-fas"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137" y="-81"/>
         </scene>
-        <!--View Controller-->
+        <!--Searchmember-->
         <scene sceneID="QTh-9K-WWc">
             <objects>
-                <viewController id="vDg-o8-GCs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchmember" id="vDg-o8-GCs" customClass="searchmember" customModule="GSCA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U8l-FQ-0UA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,7 +140,7 @@
                                     <color key="titleShadowColor" red="0.038638671729999997" green="0.51735593440000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ciM-A8-tCl" kind="push" id="ids-VW-QKA"/>
+                                    <action selector="click:" destination="vDg-o8-GCs" eventType="touchUpInside" id="sn3-IH-jma"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -161,6 +166,10 @@
                         <viewLayoutGuide key="safeArea" id="q2d-YD-LM5"/>
                     </view>
                     <navigationItem key="navigationItem" id="lUN-9g-FKC"/>
+                    <connections>
+                        <outlet property="inputid" destination="2Nk-y3-OJY" id="Klm-hd-AT4"/>
+                        <outlet property="inputmdp" destination="xd4-eR-fdm" id="JMw-T5-bkQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQf-Kk-lmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
