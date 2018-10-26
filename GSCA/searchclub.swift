@@ -13,6 +13,7 @@ import SwiftyJSON
 class searchclub: UIViewController {
 
     @IBOutlet weak var validclub: UIButton!
+    
     @IBOutlet weak var inputclub: UITextField!
     
     let urlKey = "URL"
@@ -43,6 +44,7 @@ class searchclub: UIViewController {
                     ClubSingleton.instance.url = url as String
                     
                     self.performSegue(withIdentifier: "searchmember", sender: self)
+                    
                 
                 }
                 

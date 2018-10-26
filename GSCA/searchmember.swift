@@ -47,7 +47,7 @@ class searchmember: UIViewController {
                     
                     
                     
-                    //self.performSegue(withIdentifier: "searchmember", sender: self)
+                    self.performSegue(withIdentifier: "accueil", sender: self)
                     
                 }
                 
@@ -59,10 +59,27 @@ class searchmember: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
+        let preferences = UserDefaults.standard
         
+        if preferences.object(forKey: self.memberKey) != nil {
+            
+            let id = preferences.string(forKey: self.memberKey)
+
+            Alamofire.request("\(ClubSingleton.instance.url)webService/getMembre.php?id=\(id ?? "")").responseJSON { response in
+                if let result = response.result.value {
+                    
+                    let json = JSON(result)
+                    
+                    let membre = Mapper<Membre>().map(JSON: result as! [String : Any])
+                    
+                    MembreSingleton.instance.membre = membre
+                    
+                    self.performSegue(withIdentifier: "accueil", sender: self)
+            
+                    }
+                    
+                }
+            }
     
-        
     }
-    
 }
